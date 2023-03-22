@@ -13,4 +13,4 @@ ap.add_argument("o", type=float)
 args = ap.parse_args()
 
 p = subprocess.run(['quilting', '-p', str(args.ps), '-r', str(args.r), '-t', str(args.t), '-o',
-                    str(args.o), 'input.png', 'output.png', 'position_map.png', 'synthesis_map.png'],) 
+                    str(args.o), 'input_0.png', 'output.png', 'position_map.png', 'synthesis_map.png']) 
