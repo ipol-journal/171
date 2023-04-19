@@ -17,7 +17,7 @@ image = cv2.imread('input_0.png')
 cv2.imwrite('input_0.png', image)
 
 p = subprocess.run(['quilting', '-p', str(args.ps), '-r', str(args.r), '-t', str(args.t), '-o',
-                str(args.o), 'input_0.png', 'output.png', 'position_map.png', 'synthesis_map.png'], stdout=stdout, stderr=stdout)
+                str(args.o), 'input_0.png', 'output.png', 'position_map.png', 'synthesis_map.png'])
 if p.returncode != 0:
     with open("demo_failure.txt", "w") as file:
         file.write("Input image is too small. The size should be greater than 50x50 pixels")
